@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Curtain Layer Responsive Menu | CSS & Javascript</title>
+  </head>
+  <body>
+    <div id="curtain">
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="toggle" onclick="toggle()">CLICK HERE!</div>
+    </div>
+
+    <script>
+      function toggle() {
+        var curtain = document.getElementById("curtain");
+        curtain.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
